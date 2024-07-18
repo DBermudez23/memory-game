@@ -1,0 +1,407 @@
+.notificacion-error-container{
+    display: none;
+    width: 80vw;
+    height: 50px;
+    justify-content: center;
+    top: 10px;
+    z-index: 1000;
+}
+
+.notificacion-content{
+    background-color: #FFC300;
+    border: 2px solid #C70039;
+    color: #C70039;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    display: inherit;
+    flex-direction: column;
+}
+
+  /* card1 */
+
+  #card1:checked~#card2:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+  #card1:checked~#card2:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+    display: flex;
+    position: absolute;
+
+  }
+
+    /* card2 */
+    #card1:not(:checked)~#card2:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+    display: flex;
+    position: absolute;
+  }
+    
+    
+    /* card3 */
+    
+    #card1:checked~#card2:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card1:not(:checked)~#card2:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card3:checked~#card4:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position:  absolute;
+    }
+    
+    /* card4 */
+    
+    #card1:checked~#card2:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+  #card1:not(:checked)~#card2:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+  #card3:not(:checked)~#card4:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+    display: flex;
+    position: absolute;
+  }
+    
+    
+    /* card5 */
+    #card1:checked~#card2:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card1:not(:checked)~#card2:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card5:checked~#card6:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position:  absolute;
+    }
+    
+    
+    /* card6 */
+    #card5:not(:checked)~#card6:checked~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card5:not(:checked)~#card6:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position:  absolute;
+    }
+    
+    
+    /* Card 7*/
+    #card1:checked~#card2:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card1:not(:checked)~#card2:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card7:checked~#card8:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position:  absolute;
+    }
+    
+    
+    /* card8 */
+    #card7:not(:checked)~#card8:checked~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card7:not(:checked)~#card8:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    }
+    
+    /* card9 */
+    #card9:checked~#card10:not(:checked)~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card9:checked~#card10:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    }
+    
+    /* card10 */
+    #card9:not(:checked)~#card10:checked~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card9:not(:checked)~#card10:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position:  absolute;
+    }
+    
+    /* card11 */
+    #card11:checked~#card12:not(:checked)~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card11:checked~#card12:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    }
+    
+    /* card12 */
+    #card11:not(:checked)~#card12:checked~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card11:not(:checked)~#card12:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    
+    }
+    
+    /* card13 */
+    #card13:checked~#card14:not(:checked)~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card13:checked~#card14:not(:checked)~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    
+    }
+    
+    /* card14 */
+    #card13:not(:checked)~#card14:checked~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card15:checked~#card16:not(:checked)~.notificacion-error-container,
+    #card13:not(:checked)~#card14:checked~#card15:not(:checked)~#card16:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    }
+    
+    /* card15 */
+    #card15:checked~#card16:not(:checked)~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card15:checked~#card16:not(:checked)~#card13:not(:checked)~#card14:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    }
+    
+    /* card16 */
+    #card15:not(:checked)~#card16:checked~#card1:checked~#card2:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card1:not(:checked)~#card2:checked~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card3:checked~#card4:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card3:not(:checked)~#card4:checked~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card5:checked~#card6:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card5:not(:checked)~#card6:checked~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card7:checked~#card8:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card7:not(:checked)~#card8:checked~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card9:checked~#card10:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card9:not(:checked)~#card10:checked~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card11:checked~#card12:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card11:not(:checked)~#card12:checked~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card13:checked~#card14:not(:checked)~.notificacion-error-container,
+    #card15:not(:checked)~#card16:checked~#card13:not(:checked)~#card14:checked~.notificacion-error-container{
+        display: flex;
+        position: absolute;
+    }
+
+
+/*---------YOU WIN-----------*/
+
+  /* Estilo para el overlay */
+.notificacion-ganaste-container {
+    visibility: hidden;
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); 
+    z-index: 1000;
+}
+
+.notificacion-ganaste-container h2 {
+    color: #C70039;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.notificacion-ganaste-container p {
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.notificacion-ganaste-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #C70039;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: filter .2s ease-in, filter .2s ease-in, font-size .2s ease-in;
+}
+
+
+.notificacion-ganaste-content button {
+    background-color: #FFC300;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.notificacion-ganaste-content button:hover {
+    color: #581845;
+    filter: brightness(1.5);
+    font-size: 22px;
+    filter: drop-shadow(0 0 3px #fff);
+}
+
+
+/* Muestra el overlay cuando todos los checkboxes están marcados */
+#card1:checked+#card2:checked+#card3:checked+#card4:checked+#card5:checked+#card6:checked+#card7:checked+#card8:checked+#card9:checked+#card10:checked+#card11:checked+#card12:checked+#card13:checked+#card14:checked+#card15:checked+#card16:checked~.notificacion-ganaste-container {
+    visibility: visible;
+    display: flex; 
+}

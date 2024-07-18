@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/aletoriedad.css">
+    <link rel="stylesheet" href="./CSS/animacion.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/interfaz.css">
+    <link rel="stylesheet" href="./CSS/logica_juego.css">
+    <link rel="stylesheet" href="./CSS/notification.css">
+    <link rel="stylesheet" href="./CSS/view.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="title"><h1>Memory game</h1></div>
+        <div class="button-header-container">
+            <a href="index.html"><button>RESET GAME</button></a>
+        </div>
+    </header>
+    <main>
+        <input type="checkbox" id="check" class="input-checkbox">
+        <label for="check" class="button-container">Iniciar</label>
+        <div class="interfaz"></div>
+
+
+        <input type="checkbox" id="card1" class="flip-card-checkbox">
+        <input type="checkbox" id="card2" class="flip-card-checkbox">
+        <input type="checkbox" id="card3" class="flip-card-checkbox">
+        <input type="checkbox" id="card4" class="flip-card-checkbox">
+        <input type="checkbox" id="card5" class="flip-card-checkbox">
+        <input type="checkbox" id="card6" class="flip-card-checkbox">
+        <input type="checkbox" id="card7" class="flip-card-checkbox">
+        <input type="checkbox" id="card8" class="flip-card-checkbox">
+        <input type="checkbox" id="card9" class="flip-card-checkbox">
+        <input type="checkbox" id="card10" class="flip-card-checkbox">
+        <input type="checkbox" id="card11" class="flip-card-checkbox">
+        <input type="checkbox" id="card12" class="flip-card-checkbox">
+        <input type="checkbox" id="card13" class="flip-card-checkbox">
+        <input type="checkbox" id="card14" class="flip-card-checkbox">
+        <input type="checkbox" id="card15" class="flip-card-checkbox">
+        <input type="checkbox" id="card16" class="flip-card-checkbox">
+
+        <div class="interfaz"></div>
+
+
+        <div class="notificacion-error-container">
+            <div class="notificacion-content">CARTA EQUIVOCADA, ELIGE OTRA</div>
+        </div>
+
+        <div class="notificacion-ganaste-container">
+            <div class="notificacion-ganaste-content">
+                <h2>¡GANASTE!</h2>
+                <br>
+                <p>Presiona el siguiente botón para jugar de nuevo</p>
+                <a href="index.html">
+                    <button>JUGAR DE NUEVO</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <label for="card1" class="flip-card-inner selector1">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image1.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+            
+            <label for="card2" class="flip-card-inner selector2">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image1.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card3" class="flip-card-inner selector3">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image2.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card4" class="flip-card-inner selector4">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image2.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card5" class="flip-card-inner selector5">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image3.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card6" class="flip-card-inner selector6">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image3.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card7" class="flip-card-inner selector7">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image4.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card8" class="flip-card-inner selector8">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image4.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+            
+            <label for="card9" class="flip-card-inner selector9">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image5.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card10" class="flip-card-inner selector10">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image5.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card11" class="flip-card-inner selector11">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image6.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card12" class="flip-card-inner selector12">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image6.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card13" class="flip-card-inner selector13">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image7.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label>
+                
+            <label for="card14" class="flip-card-inner selector14">
+                <div class="flip-card ">
+                        <div class="flip-card-front">
+                            <img src="./img/imgdef.webp" alt="Imagen frontal">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./img/image7.jpg" alt="Imagen trasera">
+                        </div>
+                </div>
+            </label>
+                
+            <label for="card15" class="flip-card-inner selector15">
+                <div class="flip-card ">
+                    <div class="flip-card-front">
+                        <img src="./img/imgdef.webp" alt="Imagen frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/image8.jpg" alt="Imagen trasera">
+                    </div>
+                </div>
+            </label> 
+                
+            <label for="card16" class="flip-card-inner selector16">
+                <div class="flip-card ">
+                    <label for="card16" class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/imgdef.webp" alt="Imagen frontal">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./img/image8.jpg" alt="Imagen trasera">
+                        </div>
+                </div>
+            </label>
+        </div>
+            
+    </main>
+</body>
+</html>

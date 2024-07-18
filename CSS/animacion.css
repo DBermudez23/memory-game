@@ -1,0 +1,25 @@
+#card1:checked ~ .cards .selector1,
+#card2:checked ~ .cards .selector2,
+#card3:checked ~ .cards .selector3,
+#card4:checked ~ .cards .selector4,
+#card5:checked ~ .cards .selector5,
+#card6:checked ~ .cards .selector6,
+#card7:checked ~ .cards .selector7,
+#card8:checked ~ .cards .selector8,
+#card9:checked ~ .cards .selector9,
+#card10:checked ~ .cards .selector10,
+#card11:checked ~ .cards .selector11,
+#card12:checked ~ .cards .selector12,
+#card13:checked ~ .cards .selector13,
+#card14:checked ~ .cards .selector14,
+#card15:checked ~ .cards .selector15,
+#card16:checked ~ .cards .selector16 {
+    transform: rotateY(180deg) translateY(-40px);
+    z-index: 1;
+    box-shadow: 0 25px 20px #fff;
+}
+
+.flip-card-inner{
+    transition: transform .8s ease-in-out, z-index 0.6s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
